@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sign Up
+        </title>
+        <link rel="stylesheet" type ="text/css" href="signupstyle.css">
+        <style>
+            :root {
+    --gradient: linear-gradient(0deg, #080808e0, rgba(175, 120, 37, 0.877), #f07408e7);
+  
+  }
+  body {background-image: var(--gradient);}
+        </style>
+    </head>
+    <body>
+        <div class="container" style="text-align:center;">
+        
+            <form action="phpadmin.php" method="post">
+                <h1>Sign Up</h1>
+                <p>Please fill this to create an account</p>
+                <hr>
+                <lable>Name</lable>
+                <br>
+                <input type="text" name="Name" placeholder="Name">
+                <br>
+                <label>Email</label>
+                <br>
+                <input type="email" name="Emailid" placeholder="Email">
+                <br>
+                <lable>Password</lable>
+                <br>
+                <input type="password" name="Password" placeholder="Password">
+                <br>         
+                <p>
+                    By creating an account you agree to our
+                    <a href="TermsCon.html">Terms and Condition</a>
+                </p>
+                <input type="submit" name="save" class="register" value="Sign Up" style="font-size: 20px;">
+            <p>Already have an account? <a href ="Login.html">Login</a></p>
+            </form>
+        </div>
+       
+    </body>
+</html> 

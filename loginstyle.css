@@ -1,0 +1,102 @@
+:root {
+    --gradient: linear-gradient(90deg, #ff5e00e0, rgba(5, 5, 5, 0.384), #1b140ee7);
+  
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ddd;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 10s infinite;
+}
+@keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }
+input[type = "text"],
+input[type = "password"]{
+    width: 30%;
+    height: 5%;
+    padding: 12px, 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(245, 146, 33);
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    animation: bg-animation 10s infinite;
+}
+button{
+    background-color: rgb(240, 151, 69);
+    color: rgb(98, 225, 235);
+    padding: 14px, 20px; 
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%
+}
+button:hover{
+    opacity: 0.8;
+}
+.imagecontainer{
+    text-align: center;
+    margin: 30px 0 0px 0;
+    position: relative;
+}
+.imagephoto{
+    width: 30%;
+    border-radius: 40%;
+}
+.register {
+    color: white;
+    border: 0;
+    font-size: medium;
+    cursor: pointer;
+    padding: 20px;
+    width: 10%;
+    background: linear-gradient(90deg, #ee6352, purple, #ee6352);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 350ms;
+  
+}
+.register:hover{background-position: right;
+
+}
+.modal{
+overflow: auto;
+padding-top: 60px;
+width: 30%;
+height: 40%;
+top: 0%;
+left: 0%;
+z-index: 1;
+position: fixed;
+}
+.modal-content{
+background-color: white;
+margin: 5% auto 15% auto;
+border: 1px solid #888;
+width : 80%;
+}
+.container{
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+span.psw{
+float: right;
+padding-top: 16px;
+}

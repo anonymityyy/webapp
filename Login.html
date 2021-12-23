@@ -1,0 +1,60 @@
+<html>
+    <head>
+    <title>
+        Login Anonymity
+    </title>
+    <link rel="stylesheet" type ="text/css" href="loginstyle.css">
+    <link rel="icon" type ="image/png" href="headicon.png">
+    
+ 	<style>
+    .glow {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px rgb(15, 0, 0), 0 0 3px #270717, 0 0 4px #11030a, 0 0 5px #220111, 0 0 10px #080306, 0 0 15px #050103, 0 0 20px #070305;
+  }
+  
+  to {
+    text-shadow:0 0 1px rgb(241, 236, 235), 0 0 3px rgb(250, 135, 4), 0 0 04px #f77801ef, 0 0 5px #f77801ef, 0 0 10px #f77801ef, 0 0 15px #ff7b00, 0 0 20px #ff5e00;
+     
+  }
+}
+
+</style>
+     
+    </head>
+        <body>
+            
+            <center>
+                <div class="modal">
+                <form class="modal-content-animate"></form>
+                </div>
+                    <form action="phplogincheck.php" method="post">
+                        <div class = "imagecontainer">
+                        <img src="icon.png"  width="300"
+                        height="300" / class="photo">
+                        </div>
+                        <div class="container"></div>
+                         <label class="glow">Email &nbsp;&nbsp; &nbsp;</label>
+                         <input class="effect-9" type="text"  name="Emailid" placeholder="E-mail">
+                     <br />
+                        <label class="glow">Password</label>
+                        <input type="password" name="Password" placeholder="Password">
+                        <br>
+                        <button class="register" name="login">Login</button>
+                        <lable class="glow">
+                            <p>Forget <a href="forgot.html">Password.</a></p>
+                        </lable>
+                        <label class="glow">
+                            <p>No account <a href="SIGNUP.HTML">Signup?</a></p>
+                        </label>
+                         </div>
+                   </form>
+            </center>
+        </body>
+</html>
